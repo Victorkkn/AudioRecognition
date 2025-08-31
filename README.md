@@ -1,12 +1,10 @@
-# AudioRecognition
+# Sistema QuantumFinance - Atendimento por Voz
 
-# 🏦 Sistema QuantumFinance - Atendimento por Voz
-
-**MBA FIAP - Workshop Audição Cognitiva**  
+**MBA FIAP - Workshop Audio Recognition**  
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Sistema completo de atendimento bancário automatizado que utiliza:
 - **TTS (Text-to-Speech)**: Síntese de voz em português
@@ -16,7 +14,7 @@ Sistema completo de atendimento bancário automatizado que utiliza:
 
 ---
 
-## ⚡ Instalação Rápida
+## Instalação Rápida
 
 ### Pré-requisitos
 - **Python 3.10** (IMPORTANTE: Não use Python 3.13!)
@@ -27,7 +25,7 @@ Sistema completo de atendimento bancário automatizado que utiliza:
 ```
 Download: https://www.python.org/downloads/release/python-31011/
 Baixar: "Windows installer (64-bit)"
-Durante instalação: ✅ Marcar "Add Python to PATH"
+Durante instalação: Marcar "Add Python to PATH"
 ```
 
 ### Passo 2: Instalar Dependências
@@ -56,7 +54,7 @@ cd "~\projeto_quantumfinance"
 py -3.10 sistema_quantum_completo.py
 ```
 
-### 🔍 Verificar Instalação
+### Verificar Instalação
 ```bash
 # Testar se Python 3.10 está instalado:
 py -3.10 --version
@@ -70,7 +68,7 @@ py -3.10 -c "import pyaudio; print('PyAudio OK')"
 
 ---
 
-## 🎯 Como Usar
+## Como Usar
 
 ### Menu Inicial
 Ao executar, escolha:
@@ -101,7 +99,7 @@ O sistema apresentará 4 opções:
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 projeto_quantumfinance/
@@ -126,112 +124,3 @@ projeto_quantumfinance/
 ```
 
 ---
-
-## ✅ Requisitos Atendidos (10/10 pontos)
-
-| Requisito | Pontos | Implementação |
-|-----------|--------|---------------|
-| **Gerar frases TTS** | 2.0 | ✅ 12 frases diferentes com identificação da empresa |
-| **Armazenar em arquivos** | 2.0 | ✅ 12 arquivos MP3 salvos na pasta audio/ |
-| **Capturar áudio STT** | 2.0 | ✅ Microfone captura e processa comandos |
-| **Reconhecer palavras** | 2.0 | ✅ Identifica palavras-chave, não apenas números |
-| **Opção não identificada** | 1.0 | ✅ Mensagem de erro e repetição do menu |
-| **Encerrar com "Sair"** | 1.0 | ✅ Loop encerra corretamente |
-| **TOTAL** | **10.0** | ✅ **100% Completo** |
-
----
-
-## 🎥 Roteiro para Gravação do Vídeo
-
-### 1. Walk-through do Código (30s)
-- Mostrar imports e classe principal
-- Destacar métodos `falar()` e `ouvir_comando()`
-- Mostrar dicionário de palavras-chave
-
-### 2. Execução com Identificação Positiva (30s)
-- Executar o sistema
-- Falar: "consultar saldo"
-- Sistema deve confirmar e mostrar saldo
-
-### 3. Execução sem Identificação (30s)
-- Falar algo aleatório: "banana" ou "teste"
-- Sistema deve dar erro e repetir menu
-
-### 4. Saída do Loop (30s)
-- Falar: "quero sair"
-- Sistema deve confirmar e encerrar
-
----
-
-## 🔧 Solução de Problemas
-
-### Erro: "Python não reconhecido"
-```bash
-# Use py ao invés de python
-py -3.10 sistema_quantum_completo.py
-```
-
-### Erro: "Módulo não encontrado"
-```bash
-# Reinstale as dependências
-py -3.10 -m pip install --upgrade pip
-py -3.10 -m pip install pyttsx3 SpeechRecognition PyAudio
-
-# Se falhar, instale uma por vez:
-py -3.10 -m pip install pyttsx3
-py -3.10 -m pip install SpeechRecognition
-py -3.10 -m pip install PyAudio
-```
-
-### Erro: "Microfone não detectado"
-```bash
-# Opção 1: Reinstalar PyAudio
-py -3.10 -m pip uninstall pyaudio
-py -3.10 -m pip install pyaudio
-
-# Opção 2: Usar pipwin
-py -3.10 -m pip install pipwin
-py -3.10 -m pipwin install pyaudio
-
-# Opção 3: Continue em modo manual (digite ao invés de falar)
-```
-
-### Erro: "Não consegui entender o áudio"
-- Fale mais próximo do microfone
-- Reduza ruído de fundo
-- Fale palavras-chave claramente: "saldo", "compra", "atendente", "sair"
-- Tente falar mais devagar
-
-### Sistema sempre usa modo manual
-- Normal se PyAudio não estiver instalado
-- Digite as palavras-chave pelo teclado
-- Funciona exatamente igual ao modo voz
-
----
-
-## 👥 Informações do Projeto
-
-**Disciplina**: Workshop Audição Cognitiva  
-**Instituição**: FIAP - MBA em Inteligência Artificial  
-**Professor**: Alexandre Gastaldi Fernandes  
-**Ano**: 2024  
-
-**Tecnologias**:
-- Python 3.10.11
-- pyttsx3 2.99
-- SpeechRecognition 3.14.3
-- PyAudio 0.2.14
-
----
-
-## 📝 Entregáveis
-
-1. ✅ **Código Python**: `sistema_quantum_completo.py`
-2. ✅ **Descrição da Solução**: `DESCRICAO_SOLUCAO.txt`
-3. ✅ **Documentação**: `README.md`
-4. ⏳ **Vídeo Demonstrativo**: A ser gravado
-
----
-
-**Última atualização**: Dezembro 2024  
-**Status**: ✅ Pronto para entrega****
